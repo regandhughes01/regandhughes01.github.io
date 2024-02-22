@@ -2,19 +2,23 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text":"British GDP Growth",
+    "text":"USA GDP Growth",
     "subtitle": ["QoQ4 % Growth", "Source: ONS via ECO-API"]
   },
 
   "width": 400,
   "height": 300,
 
-  "data": {"url": "https://api.economicsobservatory.com/gbr/grow?vega"},
+  "data": {"url": "https://api.economicsobservatory.com/usa/grow?vega"},
 
-  "mark": "line",
+    "mark": {
+    "type": "line",
+    "color": "orange"},
 
   "encoding": {
     "x": {"field": "date", "type": "temporal"},
     "y": {"field": "value", "type": "quantitative", "title":null}
   }
 }
+
+
