@@ -81,24 +81,15 @@
         <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
-    {
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-        "title": {
-          "text": "10-Year U.S. Treasury Yield",
-          "subtitle": [
-            "Market Yield on U.S. 10-Year Treasury Securities", " Source: FRED API"
-          ]
-        },
-        "description": "A chart showing 10-Year U.S. Treasury Yields",
-        "data": {"url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/3/s3_data_FRED-DGS10.json", "format":{"type": "json", "property": "observations"}},
-        "mark": "line",
-        "encoding": {
-          "x": {"field": "date", "type": "temporal", "title":""},
-          "y": {"field": "value", "type": "quantitative", "title":"Yield"}
-        },
-        "width": 400,
-        "height": 300
-      }
+    <section>
+        <div class="chart-description"> <!-- we are grouping the title and description together so we can style them together -->
+            <h2>Section 4: Chart 4</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Add anotherchart here!
+            </p>
+        </div>
+        <figure id="#Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
 
 
 
