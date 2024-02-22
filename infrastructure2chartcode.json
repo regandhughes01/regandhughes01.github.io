@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "SAS litter",
+  "title": {
+    "text": "Infrastructure share of GG investment",
+    "subtitle": "Percentage, current prices, UK, 2006 to 2021.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/regandhughes01/regandhughes01.github.io/main/infrastructure2chart.csv"
+  },
+  "mark": {"type": "line", "color": "#efc7e5", "strokeWidth": 2, "opacity": 1},
+  "height": 300,
+  "width": 250,
+  "encoding": {
+    "y": {
+      "field": "Infrastructure share of GG investment",
+      "type": "quantitative",
+      "sort": [],
+      "title": null
+    },
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [2006, 2021]}
+    }
+  }
+}
