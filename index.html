@@ -115,10 +115,12 @@
         var figure_1_spec = "s2_chart1.json"; // We're storing the URL of the graph we want to display in a variable
         var figure_2_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
         var figure_3_spec = "infrastructure2chartcode.json"; 
+        var figure_4_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/3/s3_data_FRED-DGS10.json"; 
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         vegaEmbed('#Location2', figure_2_spec)
         vegaEmbed('#Location3', figure_3_spec)
+        vegaEmbed('#Location4', figure_4_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
